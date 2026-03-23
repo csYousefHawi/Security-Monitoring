@@ -17,6 +17,8 @@ The Security Monitoring Toolkit is designed to perform multiple system and secur
    ```bash
    git clone https://github.com/username/Security-Monitoring-Toolkit.git
    , Or, if you dont have `Git` on your computer, you can `download the zip file`.
+   then ..
+   
    cd Security-Monitoring-Toolkit
    ```
 2. Open a terminal and run the following command to start the program:
