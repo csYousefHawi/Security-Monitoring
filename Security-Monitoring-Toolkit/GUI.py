@@ -1,3 +1,7 @@
+## This version of the tool uses a graphical user interface (GUI) built with Tkinter.
+## The program opens a window with buttons for each task.
+
+## When a button is clicked, the corresponding task runs and the result is displayed in a scrollable text area.
 import tkinter as tk
 from tkinter import scrolledtext
 import sys
