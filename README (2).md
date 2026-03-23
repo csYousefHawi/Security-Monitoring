@@ -23,7 +23,7 @@ The Security Monitoring Toolkit is designed to perform multiple system and secur
     python Command-Line_Menu_Version.py
 
 ### GUI Version: 
-    ```bash
+   
     python GUI_.py
 
 
