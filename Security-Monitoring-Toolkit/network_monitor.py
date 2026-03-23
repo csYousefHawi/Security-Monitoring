@@ -1,4 +1,5 @@
-
+## This tool monitors active network connections and lists listening ports.
+## It uses the `psutil` library to retrieve and display network connection details.
 def network_monitor():
     import psutil
 
