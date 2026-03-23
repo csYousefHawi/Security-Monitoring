@@ -1,4 +1,6 @@
-# Command-Line Menu Version
+## This version of the tool is run in the command line interface (CLI).
+## The user interacts with the program by choosing a task number from a list.
+## The program then runs the corresponding task and displays the result in the terminal.
 
 # استيراد الدوال من ملفاتهم
 from os_fingerprinting import os_fingerprinting
