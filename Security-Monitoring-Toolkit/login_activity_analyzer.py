@@ -1,5 +1,4 @@
-## This tool reads a login log file and analyzes login activity.
-## It counts successful and failed login attempts and identifies suspicious IPs.
+
 
 def login_activity_analyzer(log_file="login.log"):
     import random
@@ -20,7 +19,7 @@ def login_activity_analyzer(log_file="login.log"):
 
     print(f"{entries} login records added to {log_file}")
 
-    # --- جزء تحليل الملف ---
+    
     successful = 0
     failed = 0
     failed_ips = {}
@@ -40,7 +39,7 @@ def login_activity_analyzer(log_file="login.log"):
     print(f"\n--- Login Analysis ---")
     print(f"Successful logins: {successful}")
     print(f"Failed logins: {failed}")
-    print("Suspicious IPs (multiple failed attempts):")
+    print("\nSuspicious IPs (multiple failed attempts):")
     for ip, count in failed_ips.items():
-        if count > 2:
+        if count > 2: 
             print(f"{ip} - {count} failed attempts")
