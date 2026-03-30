@@ -4,7 +4,7 @@
 
 from os_fingerprinting import os_fingerprinting
 from log_file_scanner import log_file_scanner
-from suspicious_process_detector import suspicious_process_detector
+from suspicious_process_detector import list_all_processes, scan_suspicious_processes
 from network_monitor import network_monitor
 from login_activity_analyzer import login_activity_analyzer
 import time
@@ -26,7 +26,8 @@ def main_menu():
         elif choice == '2':
             log_file_scanner()       
         elif choice == '3':
-            suspicious_process_detector()  
+         list_all_processes()
+         scan_suspicious_processes()  
         elif choice == '4':
             network_monitor()    
         elif choice == '5':
