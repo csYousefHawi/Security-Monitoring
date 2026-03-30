@@ -11,7 +11,7 @@ import time
 try:
     from os_fingerprinting import os_fingerprinting
     from log_file_scanner import log_file_scanner
-    from suspicious_process_detector import suspicious_process_detector
+    from suspicious_process_detector import list_all_processes, scan_suspicious_processes
     from network_monitor import network_monitor
     from login_activity_analyzer import login_activity_analyzer
 except ImportError:
@@ -55,7 +55,7 @@ class SecurityToolkitGUI:
 
         self.add_brand_button("🎮  OS FINGERPRINTING", lambda: self.run_tool(os_fingerprinting, "EXPLORE PROJECTS"))
         self.add_brand_button("🔍  FILE SCANNER", lambda: self.run_tool(log_file_scanner, "FILE SCANNER"))
-        self.add_brand_button("🛡️  SUSPICIOUS PROCESS", lambda: self.run_tool(suspicious_process_detector, "SUSPICIOUS PROCESS"))
+        self.add_brand_button("🛡️  SUSPICIOUS PROCESS", lambda: self.run_tool(lambda :[list_all_processes(),scan_suspicious_processes()], "SUSPICIOUS PROCESS"))
         self.add_brand_button("🌐  NETWORK MONITOR", lambda: self.run_tool(network_monitor, "NETWORK MONITOR"))
         self.add_brand_button("🔑  LOGIN ANALYZER", lambda: self.run_tool(lambda: login_activity_analyzer("login.log"), "LOGIN ANALYZER"))
 
